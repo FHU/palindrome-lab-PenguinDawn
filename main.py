@@ -1,5 +1,22 @@
-#REMOVE PASS AND FIX THIS FUNCTION
 def palindrome(word):
-    pass
+    end = False
+    if word == " ":
+        end = False
+    else:
+        stripped = word.strip()
+        lowered = stripped.lower()
+        num = lowered.rfind(lowered)
+        
 
-#YOUR CODE GOES HERE
+        if num == -1:
+            end = False
+        else:
+            end = True
+
+    return end
+
+user_in = input()
+print(palindrome(user_in))
+
+    
+
