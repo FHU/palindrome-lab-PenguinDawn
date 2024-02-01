@@ -5,13 +5,14 @@ def palindrome(word):
     else:
         stripped = word.strip()
         lowered = stripped.lower()
-        num = lowered.rfind(lowered)
+        newStr = ""
+        for i in range(len(lowered) - 1, 0, -1):
+            newStr += lowered[i]
         
-
-        if num == -1:
-            end = False
-        else:
+        if newStr == lowered:
             end = True
+        else:
+            end = False
 
     return end
 
