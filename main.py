@@ -16,7 +16,7 @@ def palindrome(word):
 
     return end
 
-#here we go
+#here we go. 
 user_in = input()
 print(palindrome(user_in))
 
