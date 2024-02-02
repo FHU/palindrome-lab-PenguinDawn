@@ -16,7 +16,7 @@ def palindrome(word):
 
     return end
 
-#redid to see if commit worked
+#The tests won't run
 user_in = input()
 print(palindrome(user_in))
 
