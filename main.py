@@ -16,7 +16,7 @@ def palindrome(word):
 
     return end
 
-#The tests won't run
+#here we go
 user_in = input()
 print(palindrome(user_in))
 
