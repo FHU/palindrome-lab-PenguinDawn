@@ -17,8 +17,9 @@ def palindrome(word):
     return end
 
 #palidrome here
-user_in = input()
-print(palindrome(user_in))
+if __name__ == '__main__':
+    user_in = input()
+    print(palindrome(user_in))
 
     
 
