@@ -1,5 +1,5 @@
 
-def palindrome(word="kayak"):
+def palindrome(word):
     end = False
 
     if word == " ":
