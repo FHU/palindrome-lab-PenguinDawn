@@ -1,9 +1,13 @@
+
 def palindrome(word):
+
     end = False
+
     if word == " ":
         end = False
+
     else:
-        stripped = word.strip()
+        stripped = "".join(word.split(" "))
         lowered = stripped.lower()
         newStr = ""
         for i in range(len(lowered) - 1, 0, -1):
@@ -15,11 +19,6 @@ def palindrome(word):
             end = False
 
     return end
-
-#palidrome here
-if __name__ == '__main__':
-    user_in = input()
-    print(palindrome(user_in))
 
     
 
