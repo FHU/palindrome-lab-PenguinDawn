@@ -1,18 +1,18 @@
 
-def palindrome(word):
-
+def palindrome(word="kayak"):
     end = False
 
     if word == " ":
         end = False
-
     else:
         stripped = "".join(word.split(" "))
+        print(stripped)
         lowered = stripped.lower()
         newStr = ""
-        for i in range(len(lowered) - 1, 0, -1):
+        for i in range(len(lowered)-1, -1, -1):
             newStr += lowered[i]
         
+        print(newStr, lowered)
         if newStr == lowered:
             end = True
         else:
@@ -20,5 +20,5 @@ def palindrome(word):
 
     return end
 
-    
+
 
